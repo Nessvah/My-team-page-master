@@ -61,7 +61,7 @@ h2 {
 figcaption {
   writing-mode: vertical-lr;
   position: absolute;
-  top: -415px;
+  top: -330px;
   right: -25px;
   text-orientation: sideways-right;
   font-size: 16px;
@@ -83,4 +83,34 @@ picture {
 
 .flex-end {
   align-self: flex-end;
+}
+
+/* FOOTER */
+
+footer {
+  min-height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 0.778em;
+  margin: 0 auto;
+  max-width: 90%;
+  color: #a9a9a9;
+  height: 50px;
+  padding-top: 40px;
+}
+
+a {
+  color: #a9a9a9;
+  font-weight: 700;
+}
+
+a:active {
+  color: red;
 }
