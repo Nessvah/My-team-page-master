@@ -16,6 +16,8 @@ h2 {
   font-size: 1em;
 }
 
+/* HEADER - FLEXBOX*/
+
 .text-uppercase {
   text-transform: uppercase;
 }
@@ -29,8 +31,9 @@ h2 {
 .header-container {
   display: flex;
   align-items: center;
-  gap: 210px;
-  margin: 100px 240px;
+  justify-content: center;
+  gap: 20%;
+  margin: 100px auto;
 }
 
 .title,
@@ -41,4 +44,43 @@ h2 {
 .header-content {
   max-width: 440px;
   line-height: 27px;
+}
+
+/*TEAM PICTURES - GRID */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
+  max-width: 1440px;
+  height: 1200px;
+  background-color: blueviolet;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+figcaption {
+  writing-mode: vertical-lr;
+  position: absolute;
+  top: -415px;
+  right: -25px;
+  text-orientation: sideways-right;
+  font-size: 16px;
+}
+
+picture {
+  position: relative;
+}
+
+.team-picture {
+  max-width: 70%;
+  flex-shrink: 1;
+  background-color: gray;
+}
+
+.team-picture h2 {
+  margin-top: 15px;
+}
+
+.flex-end {
+  align-self: flex-end;
 }
