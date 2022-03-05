@@ -155,7 +155,6 @@ a:active {
   .grid-container {
     grid-template-columns: repeat(2, 15em);
     height: 900px;
-    
   }
 
   .team-picture {
@@ -163,7 +162,9 @@ a:active {
     margin: 0;
   }
 
-  .team-picture:first-child, .team-picture:nth-child(3), .team-picture:nth-child(5) {
+  .team-picture:first-child,
+  .team-picture:nth-child(3),
+  .team-picture:nth-child(5) {
     margin-left: 100px;
   }
 
@@ -183,6 +184,4 @@ a:active {
   .sara-end {
     margin-left: 20px;
   }
-}
-
 }
