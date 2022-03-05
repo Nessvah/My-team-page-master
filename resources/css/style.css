@@ -39,10 +39,10 @@ h2 {
 .title,
 .header-content {
   min-height: 105px;
+  max-width: 440px;
 }
 
 .header-content {
-  max-width: 440px;
   line-height: 27px;
 }
 
@@ -50,10 +50,9 @@ h2 {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 350px 350px 350px;
-  max-width: 1440px;
+  grid-template-columns: repeat(3, 19.5em);
+  margin: 0 auto;
   height: 1200px;
-  background-color: blueviolet;
   justify-content: center;
   align-items: flex-start;
 }
@@ -62,7 +61,7 @@ figcaption {
   writing-mode: vertical-lr;
   position: absolute;
   top: -330px;
-  right: -25px;
+  right: -15px;
   text-orientation: sideways-right;
   font-size: 16px;
 }
@@ -73,18 +72,20 @@ picture {
 
 .team-picture {
   max-width: 70%;
-  flex-shrink: 1;
-  background-color: gray;
+  margin-left: 50px;
 }
 
 .team-picture h2 {
   margin-top: 15px;
 }
 
-.flex-end {
+.sara-end {
   align-self: flex-end;
 }
 
+.griff-end {
+  align-self: flex-end;
+}
 /* FOOTER */
 
 footer {
@@ -93,6 +94,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 130px;
 }
 
 footer p {
@@ -113,4 +115,74 @@ a {
 
 a:active {
   color: red;
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 672px) {
+  .header-container {
+    display: block;
+    max-width: 80%;
+    margin: 70px auto;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 19.5em);
+  }
+
+  .team-picture {
+    max-width: 60%;
+  }
+
+  figcaption {
+    top: -280px;
+  }
+
+  .tb-end {
+    align-self: flex-end;
+  }
+
+  .griff-end {
+    align-self: flex-start;
+  }
+}
+
+@media only screen and (max-width: 672px) {
+  .header-container {
+    display: block;
+    max-width: 90%;
+    margin: 70px auto;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 15em);
+    height: 900px;
+    
+  }
+
+  .team-picture {
+    max-width: 50%;
+    margin: 0;
+  }
+
+  .team-picture:first-child, .team-picture:nth-child(3), .team-picture:nth-child(5) {
+    margin-left: 100px;
+  }
+
+  figcaption {
+    top: -170px;
+  }
+
+  .tb-end {
+    align-self: flex-end;
+    margin-left: 20px;
+  }
+
+  .griff-end {
+    align-self: flex-start;
+  }
+
+  .sara-end {
+    margin-left: 20px;
+  }
+}
+
 }
