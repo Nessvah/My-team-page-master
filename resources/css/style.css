@@ -126,6 +126,7 @@ a:active {
 
   .grid-container {
     grid-template-columns: repeat(2, 19.5em);
+    height: 1200px;
   }
 
   .team-picture {
