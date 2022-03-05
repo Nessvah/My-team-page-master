@@ -1,95 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
-
-    <link rel="icon" href="devchallenges.png" />
-
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./resources/css/reset.css" />
+    <link rel="stylesheet" href="./resources/css/style.css" />
+    <title>My team</title>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
+    <div class="site-container">
+      <header class="header-container">
+        <div class="title">
+          <h1>The creative crew</h1>
+        </div>
+        <div class="header-content">
+          <h2 class="text-uppercase">Who are we</h2>
+          <p>
+            We are a team of creatively diverse. driven. innovative individuals
+            working in various locations from the world.
+          </p>
+        </div>
+      </header>
 
+      <main class="grid-container">
+        <article class="team-picture">
+          <picture>
+            <img src="./resources/assets/images/photo1.png" alt="" />
+            <figcaption class="text-uppercase">Product owner</figcaption>
+          </picture>
+          <h2>Bill Mahoney</h2>
+        </article>
+
+        <article class="team-picture sara-end">
+          <picture>
+            <img src="./resources/assets/images/photo2.png" alt="" />
+            <figcaption class="text-uppercase">Art director</figcaption>
+          </picture>
+          <h2>Sara Cabrera</h2>
+        </article>
+
+        <article class="team-picture">
+          <picture>
+            <img src="./resources/assets/images/photo3.png" alt="" />
+            <figcaption class="text-uppercase">Tech lead</figcaption>
+          </picture>
+          <h2>Shae Le</h2>
+        </article>
+
+        <article class="team-picture tb-end">
+          <picture>
+            <img src="./resources/assets/images/photo4.png" alt="" />
+            <figcaption class="text-uppercase">UX designer</figcaption>
+          </picture>
+          <h2>Skylah Lu</h2>
+        </article>
+
+        <article class="team-picture griff-end">
+          <picture>
+            <img src="./resources/assets/images/photo5.png" alt="" />
+            <figcaption class="text-uppercase">Developer</figcaption>
+          </picture>
+          <h2>Griff Richards</h2>
+        </article>
+
+        <article class="team-picture tb-end">
+          <picture>
+            <img src="./resources/assets/images/photo6.png" alt="" />
+            <figcaption class="text-uppercase">Developer</figcaption>
+          </picture>
+          <h2>Stan John</h2>
+        </article>
+      </main>
+      <footer>
         <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
+          created with ❤️ by <a href="https://github.com/Nessvah">Nessvah</a> -
+          devChallenges.io
         </p>
-      </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+      </footer>
     </div>
   </body>
 </html>

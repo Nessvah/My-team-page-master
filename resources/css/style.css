@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1em;
+}
+
+/* HEADER - FLEXBOX*/
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.site-container {
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20%;
+  margin: 100px auto;
+}
+
+.title,
+.header-content {
+  min-height: 105px;
+  max-width: 440px;
+}
+
+.header-content {
+  line-height: 27px;
+}
+
+/*TEAM PICTURES - GRID */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 19.5em);
+  margin: 0 auto;
+  height: 1200px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+figcaption {
+  writing-mode: vertical-lr;
+  position: absolute;
+  top: -330px;
+  right: -15px;
+  text-orientation: sideways-right;
+  font-size: 16px;
+}
+
+picture {
+  position: relative;
+}
+
+.team-picture {
+  max-width: 70%;
+  margin-left: 50px;
+}
+
+.team-picture h2 {
+  margin-top: 15px;
+}
+
+.sara-end {
+  align-self: flex-end;
+}
+
+.griff-end {
+  align-self: flex-end;
+}
+/* FOOTER */
+
+footer {
+  min-height: 100px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 130px;
+}
+
+footer p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 0.778em;
+  margin: 0 auto;
+  max-width: 90%;
+  color: #a9a9a9;
+  height: 50px;
+  padding-top: 40px;
+}
+
+a {
+  color: #a9a9a9;
+  font-weight: 700;
+}
+
+a:active {
+  color: red;
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 672px) {
+  .header-container {
+    display: block;
+    max-width: 80%;
+    margin: 70px auto;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 19.5em);
+    height: 1200px;
+  }
+
+  .team-picture {
+    max-width: 60%;
+  }
+
+  figcaption {
+    top: -280px;
+  }
+
+  .tb-end {
+    align-self: flex-end;
+  }
+
+  .griff-end {
+    align-self: flex-start;
+  }
+}
+
+@media only screen and (max-width: 672px) {
+  .header-container {
+    display: block;
+    max-width: 90%;
+    margin: 70px auto;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 15em);
+    height: 900px;
+  }
+
+  .team-picture {
+    max-width: 50%;
+    margin: 0;
+  }
+
+  .team-picture:first-child,
+  .team-picture:nth-child(3),
+  .team-picture:nth-child(5) {
+    margin-left: 100px;
+  }
+
+  figcaption {
+    top: -170px;
+  }
+
+  .tb-end {
+    align-self: flex-end;
+    margin-left: 20px;
+  }
+
+  .griff-end {
+    align-self: flex-start;
+  }
+
+  .sara-end {
+    margin-left: 20px;
+  }
+}
